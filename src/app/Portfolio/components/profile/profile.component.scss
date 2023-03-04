@@ -1,0 +1,29 @@
+.profileBackground{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+@keyframes rotate {
+    0%{
+        margin-left:-200px
+    }100%{
+        margin-left: 110%;
+    }
+}
+.cloud1{
+    transition: all 10s ease-in;
+    animation: rotate 15s linear infinite;
+}
+.cloud2{
+    transition: all 20s ;
+    animation: rotate 20s linear infinite;
+}
+.cloud3{
+    transition: all 30s ;
+    animation: rotate 30s linear infinite;
+}
+.cloud4{
+    transition: all 5s ;
+    animation: rotate 45s infinite;
+}

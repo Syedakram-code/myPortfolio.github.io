@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myPortfolio';
+  MODE : boolean = true;
+
+  changeMode(event: boolean){
+    this.MODE = event;
+  }
 }

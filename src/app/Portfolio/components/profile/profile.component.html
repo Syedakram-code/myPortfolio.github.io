@@ -1,0 +1,35 @@
+<div class="profileContainer relative overflow-hidden" [ngClass]="{'text-amber-50' : !dayMode , 'text-black' : dayMode}">
+<div class="sun -z-10 select-none">
+  <span>
+    <img class="sun absolute transition-all duration-500 left-30 lg:left-40" src="{{dayMode ? '/assets/images/sunIcon.png' : '/assets/images/full-moon.png'}}" alt="sun" width="150px">
+  </span>
+</div>
+<div class="profileBackground z-0 select-none">
+  <span>
+    <img class="cloud1" src="/assets/images/cloud1.png" alt="cloud1" width="200px">
+  </span>
+  <span>
+    <img class="cloud2" src="/assets/images/cloud2.png" alt="cloud2" width="200px">
+  </span>
+  <span>
+    <img class="cloud3" src="/assets/images/cloud3.png" alt="cloud3" width="200px">
+  </span>
+  <span>
+    <img class="cloud4" src="/assets/images/cloud4.png" alt="cloud4" width="200px">
+  </span>
+</div>
+<div class="content-profile content h-full w-full mx-auto flex flex-col justify-center align-middle select-none z-50">
+  <div class="rounded-full mx-auto flex p-3 relative h-72">
+    <img class="object-cover border-2 border-black rounded-full" src="/assets/images/myPrfilePic.JPG" alt="profile" width="250px" height="250px">
+  </div>
+  <div class="profileDetails mx-auto flex px-3 relative flex-col align-middle justify-center">
+    <div class="profileName mx-auto"><h1 class="text-2xl font-enso">{{MyName}}</h1></div>
+    <div class="subHeading mx-auto"><h3>Designer | Developer</h3></div>
+    <div class="socialMediaHandles my-10 flex gap-10 lg:gap-25 md:gap-20 transition-all duration-500">
+      <a *ngFor="let socialMedia of socialMediaLinks" href="{{socialMedia.link}}" target="_blank" matTooltip="{{socialMedia.toolTip}}" class="cursor-pointer">
+        <img src="{{socialMedia.src}}" alt="linkedIn"  height="40px" width="40px">
+      </a>
+    </div>
+  </div>
+</div>
+</div>
