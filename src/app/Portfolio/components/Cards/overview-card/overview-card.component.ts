@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./overview-card.component.scss']
 })
 export class OverviewCardComponent {
-
+  overviewCardData=[
+    {link : '#skills' , imgSrc : './assets/images/skillls.png' , alt : 'skillsPng' , name : 'Skills'},
+    {link : '#acadimics' , imgSrc : './assets/images/acadimics.png' , alt : 'acadimicsPng' , name : 'Acadimics'},
+    {link : '#projects' , imgSrc : './assets/images/projects.png' , alt : 'projectsPng' , name : 'Projects'},
+    {link : '#blogs' , imgSrc : './assets/images/blog1.png' , alt : 'blogPng' , name : 'Blogs'},
+  ]
 }
