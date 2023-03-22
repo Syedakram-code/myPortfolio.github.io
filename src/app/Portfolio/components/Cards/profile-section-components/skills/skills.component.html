@@ -1,3 +1,21 @@
-<div class="skills h-80 w-full bg-blue-500 flex items-center justify-center">
- <h1>My Skills...</h1>
+<div class="skills w-full flex items-center justify-center my-5">
+  <div class="w-full h-full mx-16 border-2 border-black rounded-md shadow-2xl py-5">
+    <div class="header flex items-center font-enso text-2xl justify-center mb-10">
+        <h1>Technical-Skills</h1>
+    </div>
+    <div
+      class="grid place-items-center grid-rows-4 grid-flow-col grid-cols-2 gap-5 md:grid-rows-3 md:grid-cols-3 lg:grid-rows-1 lg:grid-cols-8"
+    >
+      <span 
+      *ngFor="let skill of  skillsData"
+      class="w-24 h-full flex flex-col items-center justify-start">
+        <circle-progress [percent]="skill.percentage" [radius]="50" [outerStrokeWidth]="8" [innerStrokeWidth]="8"
+          [outerStrokeColor]="skill.outerStrokeColor" [innerStrokeColor]="skill.innerStrokeColor" [animation]="true"  [animationDuration]="1000">
+        </circle-progress>
+        <div matTooltip="{{skill.toolTip}}" class="flex justify-center cursor-pointer my-auto">
+            <img src="{{skill.imgSrc}}" alt="{{skill.alt}}" width="50px">
+        </div>
+      </span>
+    </div>
+  </div>
 </div>
