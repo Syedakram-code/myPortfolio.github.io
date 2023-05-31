@@ -1,0 +1,6 @@
+.circle-line{
+  @apply flex flex-col ml-10 mr-3 md:ml-24 lg:mr-6 lg:ml-20 h-[150px] w-[1px] border  relative 
+}
+.circle-line::after{
+    @apply content-[''] h-[20px] w-[20px] rounded-2xl border absolute -top-[12px] -left-[10px] bg-orange-300
+  }

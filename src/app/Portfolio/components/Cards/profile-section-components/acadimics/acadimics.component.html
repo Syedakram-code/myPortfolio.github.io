@@ -1,3 +1,18 @@
-<div class="skills h-80 w-full bg-slate-500 flex items-center justify-center">
-  <h1>My Acadimics...</h1>
+<div class="skills w-full flex items-center justify-center">
+  <div class="w-full h-full mx-8 border-2 border-black rounded-md shadow-2xl py-5">
+    <div class="header flex items-center font-enso text-2xl justify-center mb-10">
+      <h1>Acadamics</h1>
+    </div>
+    <div class="acadimics  w-full">
+      <div class="step flex" *ngFor="let edu of acadamics">
+        <div class="circle-line"></div>
+        <div class="institute-section relative pt-3" ngClass="text-[edu?.color]">
+         <div class="courseType absolute -top-[13px]">{{edu.courseType}}</div>
+         <h1 class="text-l">{{edu?.institute}}</h1>
+         <h2>{{edu?.passOutYear}}</h2>
+         <h3>Grade(CGPA) : {{edu?.grade}}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
