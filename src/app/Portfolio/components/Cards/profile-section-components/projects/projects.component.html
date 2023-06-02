@@ -1,3 +1,33 @@
-<div class="projects h-80 w-full bg-violet-500 flex items-center justify-center">
-    <h1>My Projects...</h1>
+<div class="skills w-full flex items-center justify-center my-14">
+    <div class="w-full h-full mx-8 border-2 border-black rounded-md shadow-2xl py-5">
+      <div class="header flex items-center font-enso text-2xl justify-center mb-10">
+        <h1>Projects</h1>
+      </div>
+      <div class="project-grid grid grid-cols-1 grid-rows-2 gap-10 lg:gap-0 place-items-center md:grid-cols-2 md:grid-rows-1 lg:grid-cols-2 lg:grid-rows-1">
+        <div class="project-container w-[250px] md:w-[300px] lg:w-[450px] cursor-pointer hover:scale-105 transition duration-300"
+        (click)="redirectToSite('https://github.com/Syedakram-code/BankATMSimulator.git')"
+        >
+          <section class="image w-full border overflow-hidden ">
+            <img class="w-full h-[250px] object-cover" src="../../../../../../assets/images/ATM_Management_Logo.png" alt="">
+          </section>
+          <section class="description w-full border border-t-0 break-words">
+             <h1>ATM Management System</h1>
+             <h3>Technologies used : Java , MySQL</h3>
+             <h3>Source code/Link : <a href="/skills" class="text-blue-600 cursor-pointer">click here</a></h3>
+          </section>
+        </div>
+        <div class="project-container w-[250px] md:w-[300px] lg:w-[450px] cursor-pointer hover:scale-105 transition duration-300"
+        (click)="redirectToSite('https://shoe-store-frontend-silk.vercel.app/')"
+        >
+          <section class="image w-full border overflow-hidden ">
+            <img class="w-full h-[250px] object-cover" src="../../../../../../assets/images/NIKE_ECOMMERCE_LOGO.png" alt="">
+          </section>
+          <section class="description w-full border border-t-0 break-words">
+             <h1>Nike Clone | eCommerce Website</h1>
+             <h3>Technologies used : Next.Js , Strapi (Backend).</h3>
+             <h3>Source code/Link : <a href="/skills" class="text-blue-600 cursor-pointer">click here</a></h3>
+          </section>
+        </div>
+      </div>
+    </div>
 </div>
